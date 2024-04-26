@@ -1,0 +1,304 @@
+#main_window {
+	background-color: rgb(50, 53, 58);
+}
+
+#other_control {
+	background-color: rgb(38, 40, 45);
+}
+
+#file_set {
+	border: none;
+	icon: url(:/image/set.png);
+	background-color: transparent;
+}
+
+#file_set:hover {
+	background-color: rgb(60, 60, 60);
+}
+
+#file_set:pressed {
+	background-color: rgb(50, 50, 50);
+}
+
+#home {
+	border: none;
+	icon: url(:/image/home.png);
+	background-color: transparent;
+}
+
+#home:hover {
+	background-color: rgb(60, 60, 60);
+}
+
+#home:pressed {
+	background-color: rgb(50, 50, 50);
+}
+
+#love_list {
+	border: none;
+	icon: url(:/image/love.png);
+	background-color: transparent;
+}
+
+#love_list:hover {
+	background-color: rgb(60, 60, 60);
+}
+
+#love_list:pressed {
+	background-color: rgb(50, 50, 50);
+}
+
+#search {
+	border: none;
+	icon: url(:/image/search.png);
+	background-color: transparent;
+}
+
+#search:hover {
+	background-color: rgb(60, 60, 60);
+}
+
+#search:pressed {
+	background-color: rgb(50, 50, 50);
+}
+
+#setting {
+	border: none;
+	icon: url(:/image/shezhi.png);
+	background-color: transparent;
+}
+
+#setting:hover {
+	background-color: rgb(60, 60, 60);
+}
+
+#setting:pressed {
+	background-color: rgb(50, 50, 50);
+}
+
+#volume {
+	border: none;
+	icon: url(:/image/shengyin_shiti.png);
+	background-color: transparent;
+}
+
+#volume:hover {
+	background-color: rgb(60, 60, 60);
+}
+
+#volume:pressed {
+	background-color: rgb(50, 50, 50);
+}
+
+#search_lineedit {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+#img_background {
+	background-color: rgb(255, 255, 255);
+}
+
+#next_button {
+	border: none;
+	icon: url(:/image/zuihouyiyemoyexiayishou.png);
+	background-color: rgb(80, 90, 100);
+}
+
+#next_button:hover {
+	background-color: rgba(80, 90, 100, 200);
+}
+
+#next_button:pressed {
+	background-color: rgba(80, 90, 100, 120);
+}
+
+#play_button {
+	border: none;
+	icon: url(:/image/arrow-.png);
+	background-color: rgb(80, 90, 100);
+}
+
+#play_button:hover {
+	background-color: rgba(80, 90, 100, 200);
+}
+
+#play_button:pressed {
+	background-color: rgba(80, 90, 100, 120);
+}
+
+#pre_button {
+	border: none;
+	icon: url(:/image/diyiyeshouyeshangyishou.png);
+	background-color: rgb(80, 90, 100);
+}
+
+#pre_button:hover {
+	background-color: rgba(80, 90, 100, 200);
+}
+
+#pre_button:pressed {
+	background-color: rgba(80, 90, 100, 120);
+}
+
+#open_file {
+	border: none;
+	background-color: transparent;
+	icon: url(:/image/folder open-fill.png);
+}
+
+#singer,#song_name {
+	color: white;
+}
+
+#home_list_control,
+#song_list_control,
+#local_list_control,
+#search_list_control {
+	outline: none;
+	background-color: rgb(51, 53, 56);
+}
+
+#home_list_control::item:selected,
+#song_list_control::item:selected,
+#local_list_control::item:selected,
+#search_list_control::item:selected {
+	background-color: rgb(38, 40, 45);
+}
+
+#home_list_control::item:hover,
+#song_list_control::item:hover,
+#local_list_control::item:hover,
+#search_list_control::item:hover {
+	background: rgb(0, 100, 200);
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+#horizontalSlider::groove:horizontal {
+	height: 2px;
+	border: 1px solid;
+	border-radius: 1px;
+}
+
+#horizontalSlider::sub-page:horizontal {
+	height: 2px;
+	border: 1px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: #00B0AE;
+}
+
+#horizontalSlider::add-page:horizontal {
+	height: 2px;
+	background: #EAEAEA;
+	border: 1px solid #EAEAEA;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#horizontalSlider::handle:horizontal
+{
+    width: 8px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 4px;
+    background:rgba(255, 255, 255, 255);
+}
+
+#label {
+	color: white;
+}
+
+#window_control {
+	background-color: rgb(40, 42, 45);
+}
+
+#close{
+	border: none;
+	icon: url(:/image/guanbi.png);
+	background-color: rgb(240, 80, 70);
+}
+#close:hover {
+	background-color:rgb(220, 60, 40)
+	
+}
+#close:pressed {
+	background-color: rgb(210, 40, 20);
+}
+
+#min {
+	border: none;
+	icon: url(:/image/zuixiaohua.png);
+	background-color: rgb(60, 65, 70);
+}
+
+#min:hover {
+	background-color: rgb(70, 75, 80);
+	background-color: rgb(70, 75, 80);
+}
+
+#min:pressed {
+	background-color: rgb(55, 56, 62);
+}
+
+#title {
+	color: white;
+	padding-left: 10px;
+}
+
+QPushButton[state='love'] {
+	border: none;
+	icon: url(:/image/love.png);
+	background-color: transparent;
+}
+
+QPushButton:hover[state='love'] {
+	background-color: rgb(35, 35, 35);
+}
+
+QPushButton:pressed[state='love'] {
+	background-color: rgb(40, 40, 40);
+}
+
+QPushButton[state='love_red'] {
+	border: none;
+	icon: url(:/image/love_red.png);
+	background-color: transparent;
+}
+
+QPushButton:hover[state='love_red'] {
+	background-color: rgb(35, 35, 35);
+}
+
+QPushButton:pressed[state='love_red'] {
+	background-color: rgb(40, 40, 40);
+}
+
+QPushButton[state='remove'] {
+	border: none;
+	icon: url(:/image/remove.png);
+	background-color: transparent;
+}
+
+QPushButton:hover[state='remove'] {
+	background-color: rgb(35, 35, 35);
+}
+
+QPushButton:pressed[state='remove'] {
+	background-color: rgb(40, 40, 40);
+}
+
+QPushButton[state='download'] {
+	border: none;
+	icon: url(:/image/download.png);
+	background-color: transparent;
+}
+
+QPushButton:hover[state='download'] {
+	background-color: rgb(35, 35, 35);
+}
+
+QPushButton:pressed[state='download'] {
+	background-color: rgb(40, 40, 40);
+}
+
