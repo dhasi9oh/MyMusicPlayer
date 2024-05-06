@@ -5,8 +5,6 @@ ConfigMgr::ConfigMgr() {
 	boost::filesystem::path current_path = boost::filesystem::current_path();
 	// 构建config.ini文件的完整路径  
 	boost::filesystem::path config_path = current_path / "config.ini";
-	std::cout << "Config path: " << config_path << std::endl;
-
 	// 使用Boost.PropertyTree来读取INI文件  
 	boost::property_tree::ptree pt;
 	boost::property_tree::read_ini(config_path.string(), pt);

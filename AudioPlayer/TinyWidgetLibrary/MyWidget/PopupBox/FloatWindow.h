@@ -25,24 +25,21 @@ namespace TinyWidgetLibrary
 
 	signals:
 
-		void			showTarget();
-
-		void			hideTarget();
+		void		showTarget();
+		void		hideTarget();
 
 	public:
 
-		explicit 		FloatWindow(QWidget *parent = nullptr);
-		virtual 		~FloatWindow();
-
-		void			setShowSize(QSize size);
-
-		void			setWindowSize(QSize size);
-
-		void			addWidget(QWidget *widget);
+		explicit 	FloatWindow(QWidget *parent = nullptr);
+		virtual 	~FloatWindow();
+		void		setShowSize(QSize size);
+		void		setWindowSize(QSize size);
+		//该函数只能调用一次
+		void		addWidget(QWidget *widget);
 
 	private:
 
-		void			init();
+		void		init();
 
 	private:
 

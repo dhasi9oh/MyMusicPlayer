@@ -8,7 +8,7 @@
 #include "MYSQLMgr.h"
 #include "Singleton.hpp"
 #include "HttpConnection.h"
-#include "VarifyServer/VarifyServer.h"
+#include "VarifyServer.h"
 
 class HttpConnection;
 typedef std::function<void(std::shared_ptr<HttpConnection>)> HttpHandler;

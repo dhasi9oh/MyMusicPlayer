@@ -1,10 +1,9 @@
 #include "RedirectWindow.h"
 
 RedirectWindow::RedirectWindow(QWidget *parent)
-	: TinyWidgetLibrary::RemovableMainWindow(parent)
+	: QObject(parent)
 {
 	slotSwitchLogin();
-	show();
 }
 
 RedirectWindow::~RedirectWindow()
@@ -13,14 +12,13 @@ RedirectWindow::~RedirectWindow()
 
 void RedirectWindow::slotSwitchLogin()
 {
-	if (m_login == nullptr) {
-		m_login = new LoginWindow(this);
+	if (m_login.isNull()) {
+		m_login.reset(new LoginWindow());
 		m_login->hide();
-		connect(m_login, &LoginWindow::login_success, this, &RedirectWindow::slotSwitchMain);
-		connect(m_login, &LoginWindow::register_button_clicked, this, &RedirectWindow::slotSwitchRegister);
+		connect(m_login.get(), &LoginWindow::login_success, this, &RedirectWindow::slotSwitchMain);
+		connect(m_login.get(), &LoginWindow::register_button_clicked, this, &RedirectWindow::slotSwitchRegister);
 	}
 
-	setCentralWidget(m_login);
 	if (m_register != nullptr) {
 		m_register->hide();
 	}
@@ -34,26 +32,26 @@ void RedirectWindow::slotSwitchReset()
 void RedirectWindow::slotSwitchRegister()
 {
 	if (m_register == nullptr) {
-		m_register = new RegisterWindow(this);
+		m_register.reset(new RegisterWindow());
 		m_register->hide();
-		connect(m_register, &RegisterWindow::cancel_button_clicked, this, &RedirectWindow::slotSwitchLogin);
-		connect(m_register, &RegisterWindow::register_success, this, &RedirectWindow::slotSwitchLogin);
+		connect(m_register.get(), &RegisterWindow::cancel_button_clicked, this, &RedirectWindow::slotSwitchLogin);
+		connect(m_register.get(), &RegisterWindow::register_success, this, &RedirectWindow::slotSwitchLogin);
 	}
 
-	setCentralWidget(m_register);
 	m_login->hide();
 	m_register->show();
 }
 
-void RedirectWindow::slotSwitchMain(ReqId id, QJsonObject obj, ErrorCodes err)
+void RedirectWindow::slotSwitchMain(const QJsonObject& obj)
 {
 	if (m_main == nullptr) {
-		m_main = new MainWindow(this);
+		m_main.reset(new MainWindow(obj));
 		m_main->hide();
-		emit m_main->login_success(id, obj, err);
 	}
 
-	setCentralWidget(m_main);
 	m_login->hide();
 	m_main->show();
+
+	m_login.reset();
+	m_register.reset();
 }

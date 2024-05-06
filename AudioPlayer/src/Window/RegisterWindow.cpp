@@ -1,7 +1,7 @@
 #include "RegisterWindow.h"
 
 RegisterWindow::RegisterWindow(QWidget* parent)
-	: QDialog(parent)
+	: TinyWidgetLibrary::RemovableWidget(parent)
 {
 	initWidget();
 	initHandle();
@@ -95,6 +95,7 @@ void RegisterWindow::initWidget()
 {
 	ui = new Ui::RegisterWindow;
 	ui->setupUi(this);
+	initMove();
 
 	ui->usrInput->setPlaceholderText("输入注册的账号");
 	ui->usrInput->setFrameColor(QColor(90, 93, 97));

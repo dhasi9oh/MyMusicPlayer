@@ -19,7 +19,7 @@ namespace Ui {
 };
 QT_END_NAMESPACE
 
-class RegisterWindow : public QDialog
+class RegisterWindow : public TinyWidgetLibrary::RemovableWidget
 {
 	Q_OBJECT
 

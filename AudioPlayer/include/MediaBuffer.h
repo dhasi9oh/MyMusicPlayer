@@ -9,21 +9,12 @@
 
 struct SongMessage
 {
-	QString song_name;
-	QString singer;
 	int duration;
-
-
-	bool operator<(const SongMessage& message)
-	{
-		return *this < message;
-	}
+	QString singer;
+	QString song_name;
 };
 
-bool operator<(const SongMessage& a, const SongMessage& b)
-{
-	return a.singer < b.singer;
-}
+bool operator<(const SongMessage& a, const SongMessage& b);
 
 class MediaBuffer : public QObject
 {
@@ -52,8 +43,8 @@ private:
 	struct Node
 	{
 		time_t time;
-		SongMessage message;
 		QByteArray data;
+		SongMessage message;
 	};
 
 private:

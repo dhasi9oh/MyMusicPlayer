@@ -1,0 +1,628 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "TinyWidgetLibrary/TinyWidgetLibrary.lib"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"TinyWidgetLibrary/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2229,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2303,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-permissive-"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-utf-8"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_STATEMACHINE_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.5.3/msvc2019_64/include/QtCore"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.5.3/msvc2019_64/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.5.3/msvc2019_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.5.3/msvc2019_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.5.3/msvc2019_64/include/QtGui"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.5.3/msvc2019_64/include/QtStateMachine"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					4,
+					4
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				52
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "TinyWidgetLibrary_autogen::@e90e0f1860abae8cfe0e"
+		},
+		{
+			"id" : "TinyWidgetLibrary_autogen_timestamp_deps::@e90e0f1860abae8cfe0e"
+		}
+	],
+	"id" : "TinyWidgetLibrary::@e90e0f1860abae8cfe0e",
+	"name" : "TinyWidgetLibrary",
+	"nameOnDisk" : "TinyWidgetLibrary.lib",
+	"paths" : 
+	{
+		"build" : "TinyWidgetLibrary",
+		"source" : "TinyWidgetLibrary"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				52
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				53
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				54
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/resource.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Buttons/CheckableButton/CheckButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Buttons/CheckableButton/RadioButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Buttons/CheckableButton/SwitchButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Buttons/CheckableButton/ToggleButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Buttons/RectangleButton/StandardButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Button/CheckableButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Button/RectangleButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Ripple/Overlay.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Ripple/OverlayAbstractButton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Ripple/Ripple.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Ripple/RollingRipple.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Ripple/RoundRipple.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/SliderWidget/SliderWidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/TextBox/Paint/Paint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/TextBox/Paint/PaintSub/RisePaint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/TextBox/PaintWidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Window/PointFixedWidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Window/RemovableWindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Helper/Window/SizeFixedWidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/PopupBox/FloatWindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/PopupBox/MessageBoxHint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/PopupBox/SizeFixedDialog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/Progress/Slider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/TextBox/ComboBox.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "TinyWidgetLibrary/src/TextBox/TextBox.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/CheckButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/RadioButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/SwitchButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/ToggleButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Buttons/RectangleButton/StandardButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Button/CheckableButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Button/RectangleButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Ripple/Overlay.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Ripple/OverlayAbstractButton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Ripple/Ripple.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Ripple/RollingRipple.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Ripple/RoundRipple.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/SliderWidget/SliderWidget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/TextBox/Paint/Paint.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/TextBox/Paint/PaintSub/RisePaint.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/TextBox/PaintWidget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Window/PointFixedWidget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Window/RemovableWindow.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Helper/Window/SizeFixedWidget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/PopupBox/FloatWindow.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/PopupBox/MessageBoxHint.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/PopupBox/SizeFixedDialog.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/Progress/Slider.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/TextBox/ComboBox.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "TinyWidgetLibrary/MyWidget/TextBox/TextBox.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/TinyWidgetLibrary/qrc_resource.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

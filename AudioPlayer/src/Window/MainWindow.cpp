@@ -1,7 +1,7 @@
 #include "MainWindow.h"
 
 MainWindow::MainWindow(const QJsonObject& obj, QWidget* parent)
-		: QWidget(parent)
+		: TinyWidgetLibrary::RemovableWidget(parent)
 {
 	initWidget();
 	initHandle();
@@ -318,6 +318,9 @@ void MainWindow::initWidget()
 {
 	ui = new Ui::AudioPlayer();
 	ui->setupUi(this);
+
+	initMove();
+
 	ui->search_lineedit->setFrameColor(QColor(90, 93, 97));
 	ui->search_lineedit->setTargetColor(QColor(255, 255, 255));
 	ui->search_lineedit->setBackgroundColor(QColor(90, 93, 97));

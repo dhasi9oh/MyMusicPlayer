@@ -19,6 +19,7 @@
 #include "FileSongItem.h"
 #include "Progress/Slider.h"
 #include "Helper/Window/PointFixedWidget.h"
+#include "Helper/Window/RemovableWindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,7 +27,7 @@ namespace Ui {
 };
 QT_END_NAMESPACE
 
-class MainWindow : public QWidget
+class MainWindow : public TinyWidgetLibrary::RemovableWidget
 {
 	Q_OBJECT
 
@@ -34,7 +35,7 @@ class MainWindow : public QWidget
 
 signals:
 
-	void	login_success(const QJsonObject );
+	void	login_success(const QJsonObject);
 
 public:
 
@@ -70,9 +71,9 @@ private:
 private:
 
 	void	initWidget();
-	void	initList(const QJsonObject& obj);
 	void	initHandle();
 	void	initConnect();
+	void	initList(const QJsonObject& obj);
 
 private:
 

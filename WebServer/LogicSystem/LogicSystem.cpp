@@ -12,6 +12,15 @@ LogicSystem::LogicSystem()
 		}
 		});
 
+	RegGet("/error_url", [](std::shared_ptr<HttpConnection> connection) {
+
+		});
+
+
+	RegPost("/error_url", [](std::shared_ptr<HttpConnection> connection) {
+
+		});
+
 	RegPost("/get_varifycode", [](std::shared_ptr<HttpConnection> connection) {
 		auto body_str = boost::beast::buffers_to_string(connection->m_request.body().data());
 		LOG_INFO("receive body is {}", body_str);
@@ -385,6 +394,7 @@ LogicSystem::LogicSystem()
 		beast::ostream(connection->m_response.body()) << jsonstr;
 		return true;
 		});
+
 }
 
 void LogicSystem::RegGet(std::string url, HttpHandler handler)
@@ -404,6 +414,7 @@ LogicSystem::~LogicSystem()
 bool LogicSystem::HandleGet(std::string path, std::shared_ptr<HttpConnection> con)
 {
 	if (m_getHandlers.find(path) == m_getHandlers.end()) {
+
 		return false;
 	}
 

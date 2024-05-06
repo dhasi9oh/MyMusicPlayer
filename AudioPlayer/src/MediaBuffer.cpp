@@ -1,5 +1,11 @@
 #include "MediaBuffer.h"
 
+
+bool operator<(const SongMessage& a, const SongMessage& b)
+{
+	return a.singer < b.singer;
+}
+
 MediaBuffer::MediaBuffer(QObject* parent)
 	: m_max(20)
 {

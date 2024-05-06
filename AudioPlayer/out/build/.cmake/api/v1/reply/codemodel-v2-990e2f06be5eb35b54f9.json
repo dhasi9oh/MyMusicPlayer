@@ -1,0 +1,166 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-3015767dc4a7b89e1055.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "TinyWidgetLibrary",
+					"jsonFile" : "directory-TinyWidgetLibrary-Debug-a25854e8c5e608cbc1a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "TinyWidgetLibrary",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AudioPlayer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "TinyWidgetLibrary",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AudioPlayer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AudioPlayer-Debug-97405289bb1d62d65b3d.json",
+					"name" : "AudioPlayer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AudioPlayer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AudioPlayer_autogen-Debug-99d84836ab68a822ce89.json",
+					"name" : "AudioPlayer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AudioPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AudioPlayer_autogen_timestamp_deps-Debug-aa1bc5cde37447fe5629.json",
+					"name" : "AudioPlayer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TinyWidgetLibrary::@e90e0f1860abae8cfe0e",
+					"jsonFile" : "target-TinyWidgetLibrary-Debug-4dca28b9e92963a00547.json",
+					"name" : "TinyWidgetLibrary",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TinyWidgetLibrary_autogen::@e90e0f1860abae8cfe0e",
+					"jsonFile" : "target-TinyWidgetLibrary_autogen-Debug-6e5b29f294fde8db73be.json",
+					"name" : "TinyWidgetLibrary_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TinyWidgetLibrary_autogen_timestamp_deps::@e90e0f1860abae8cfe0e",
+					"jsonFile" : "target-TinyWidgetLibrary_autogen_timestamp_deps-Debug-6a2a46bb9ff3ae3bb65f.json",
+					"name" : "TinyWidgetLibrary_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test::@e90e0f1860abae8cfe0e",
+					"jsonFile" : "target-test-Debug-2e0dbde8f2f13002112a.json",
+					"name" : "test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_autogen::@e90e0f1860abae8cfe0e",
+					"jsonFile" : "target-test_autogen-Debug-708cc0eea258d9f94c3d.json",
+					"name" : "test_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_autogen_timestamp_deps::@e90e0f1860abae8cfe0e",
+					"jsonFile" : "target-test_autogen_timestamp_deps-Debug-925de6f86818d51d48e6.json",
+					"name" : "test_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build",
+		"source" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

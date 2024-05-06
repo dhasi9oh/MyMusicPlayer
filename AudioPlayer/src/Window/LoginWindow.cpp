@@ -1,7 +1,7 @@
 #include "LoginWindow.h"
 
 LoginWindow::LoginWindow(QWidget* parent)
-		: QDialog(parent)
+		: TinyWidgetLibrary::RemovableWidget(parent)
 {
 	initWidget();
 	initHandle();
@@ -67,6 +67,7 @@ void LoginWindow::initWidget()
 {
 	ui = new Ui::LoginWindow();
 	ui->setupUi(this);
+	initMove();
 
 	ui->numInput->setPlaceholderText("输入账号");
 	ui->numInput->setFrameColor(QColor(90, 93, 97));

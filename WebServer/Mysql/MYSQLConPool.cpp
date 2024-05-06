@@ -86,7 +86,7 @@ bool MysqlDao::CheckEmail(const std::string& usr, const std::string& email)
 		std::unique_ptr<sql::ResultSet> res(pstmt->executeQuery());
 		// 遍历结果集
 		while (res->next()) {
-			LOG_INFO("Check Email: ", res->getString("email"));
+			LOG_INFO("Check Email: ", res->getString("email").asStdString());
 			if (email != res->getString("email")) {
 				return false;
 			}
@@ -157,7 +157,7 @@ bool MysqlDao::SearchSong(const std::string& song_name, Json::Value& root)
 		// 绑定参数
 		pstmt->setString(1, song_name);
 		// 获取结果集
-		auto res = std::make_unique<sql::ResultSet>(pstmt->executeQuery());
+		auto res = std::unique_ptr<sql::ResultSet>(pstmt->executeQuery());
 		// 遍历结果集
 		while (res->next()) {
 			Json::Value value;
@@ -198,7 +198,7 @@ bool MysqlDao::GetMusicFilePath(const std::string& singer, const std::string& so
 		pstmt->setString(1, singer);
 		pstmt->setString(2, song_name);
 		// 获取结果集
-		auto res = std::make_unique<sql::ResultSet>(pstmt->executeQuery());
+		auto res = std::unique_ptr<sql::ResultSet>(pstmt->executeQuery());
 		// 遍历结果集
 		while (res->next()) {
 			path = res->getString("url");

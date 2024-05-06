@@ -16,7 +16,7 @@ async function GetVarifyCode(call, callback) {
     console.log("email is ", call.request.email)
     try{
         let query_res = await redis_module.GetRedis(const_module.code_prefix+call.request.email);
-        console.log("query_res is ", query_res)
+        console.log("query_res is ", query_res);
         if(query_res == null){
 
         }

@@ -66,7 +66,7 @@ auto ThreadPool::emplace(F&& f, Args&&... args)
 {
 	using return_type = typename std::result_of<F(Args...)>::type;
 
-	auto task = std::make_shared< std::packaged_task<return_type()> >(
+	auto task = std::make_shared<std::packaged_task<return_type()> >(
 			std::bind(std::forward<F>(f), std::forward<Args>(args)...)
 	);
 

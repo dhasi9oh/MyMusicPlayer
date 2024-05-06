@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="/">
+    <file>image/set.png</file>
+    <file>image/love.png</file>
+    <file>image/home.png</file>
+    <file>image/arrow-.png</file>
+    <file>image/guanbi.png</file>
+    <file>image/remove.png</file>
+    <file>image/search.png</file>
+    <file>image/shezhi.png</file>
+    <file>image/zanting.png</file>
+    <file>image/download.png</file>
+    <file>image/love_red.png</file>
+    <file>image/zuixiaohua.png</file>
+    <file>image/shengyin_shiti.png</file>
+    <file>image/folder open-fill.png</file>
+    <file>image/diyiyeshouyeshangyishou.png</file>
+    <file>image/zuihouyiyemoyexiayishou.png</file>
+  </qresource>
+</RCC>

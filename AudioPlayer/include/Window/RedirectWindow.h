@@ -5,9 +5,8 @@
 #include "MainWindow.h"
 #include "LoginWindow.h"
 #include "RegisterWindow.h"
-#include "Helper/Window/RemovableWindow.h"
 
-class RedirectWindow : public TinyWidgetLibrary::RemovableMainWindow
+class RedirectWindow : public QObject
 {
 	Q_OBJECT
 
@@ -22,12 +21,12 @@ private slots:
 	void	slotSwitchLogin();
 	void	slotSwitchReset();
 	void	slotSwitchRegister();
-	void	slotSwitchMain(ReqId, QJsonObject, ErrorCodes);
+	void	slotSwitchMain(const QJsonObject &obj);
 
 private:
 
-	MainWindow* m_main;
-	LoginWindow* m_login;
-	RegisterWindow* m_register;
+	QScopedPointer<MainWindow> m_main;
+	QScopedPointer<LoginWindow> m_login;
+	QScopedPointer<RegisterWindow> m_register;
 
 };

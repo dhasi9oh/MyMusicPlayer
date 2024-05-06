@@ -141,6 +141,7 @@ namespace TinyWidgetLibrary
 					 "}";
 
 		m_button->setStyleSheet(qss);
+		m_button->setIconSize(QSize(20, 20));
 		m_button->setSizePolicy(size_policy);
 		m_button->setMaximumSize(50, 50);
 		m_widget->setWindowOpacity(0.0);

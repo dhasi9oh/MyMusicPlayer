@@ -21,7 +21,7 @@ namespace Ui {
 };
 QT_END_NAMESPACE
 
-class LoginWindow : public QDialog
+class LoginWindow : public TinyWidgetLibrary::RemovableWidget
 {
 	Q_OBJECT
 

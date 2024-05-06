@@ -11,14 +11,14 @@
 #include <spdlog/sinks/basic_file_sink.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/sinks/rotating_file_sink.h>
+#include "fmt/core.h"
+#include "ConfigMgr.h"
 
 class Log
 {
 public:
 
 	using Level = spdlog::level::level_enum;
-
-	//using FileEven = spdlog::file_event_handlers;
 
 public:
 
@@ -32,107 +32,101 @@ public:
 
 	~Log()
 	{
-		is_Open.store(false);
+		is_open= false;
 	}
 
 	bool async() const
 	{
-		return is_Async.load();
+		return is_async;
 	}
 
 	bool open() const
 	{
-		return is_Open.load();
+		return is_open;
 	}
 
 	Level getLevel() const
 	{
-		return m_MinLevel;
+		return m_minLevel;
 	}
 
-	void initOut(Level level = Level::err)
+	void initOut(Level level)
 	{
-		if (is_Async.load()) {
-			spdlog::init_thread_pool(m_MaxSize, 1);
-			m_Log = spdlog::stdout_color_mt<spdlog::async_factory>("m_Out");
+		if (is_async) {
+			spdlog::init_thread_pool(m_maxSize, 1);
+			m_log = spdlog::stdout_color_mt<spdlog::async_factory>("m_Out");
 		}
 		else {
-			m_Log = spdlog::stdout_color_mt("m_Out");
+			m_log = spdlog::stdout_color_mt("m_Out");
 		}
 
-		m_MinLevel = level;
-		is_Open.store(true);
+		m_minLevel = level;
+		is_open = true;
 	}
 
-	void  initBasic(std::string name = "log.txt", Level level = Level::err)
+	void  initBasic(std::string name, Level level)
 	{
-		if (is_Async.load()) {
-			spdlog::init_thread_pool(m_MaxSize, 1);
-			m_Log = spdlog::basic_logger_mt<spdlog::async_factory>("m_AsyncBasic", name, true);
+		if (is_async) {
+			spdlog::init_thread_pool(m_maxSize, 1);
+			m_log = spdlog::basic_logger_mt<spdlog::async_factory>("m_AsyncBasic", name, true);
 		}
 		else {
-			m_Log = spdlog::basic_logger_mt("m_Basic", name, true);
+			m_log = spdlog::basic_logger_mt("m_Basic", name, true);
 		}
 
-		m_MinLevel = level;
-		is_Open.store(true);
+		m_minLevel = level;
+		is_open = true;
 	}
 
-	void initRotating(std::string name = "log.txt", Level level = Level::err
-		, size_t memory_size = 50 * 1024 * 1024, size_t file_cnt = 10)
+	void initRotating(std::string name, Level level, size_t memory_size, size_t file_cnt)
 	{
-		if (is_Async.load()) {
-			spdlog::init_thread_pool(m_MaxSize, 1);
-			m_Log = spdlog::rotating_logger_mt<spdlog::async_factory>("m_AsyncRotating", name, memory_size, file_cnt, true);
+		if (is_async) {
+			spdlog::init_thread_pool(m_maxSize, 1);
+			m_log = spdlog::rotating_logger_mt<spdlog::async_factory>("m_AsyncRotating", name, memory_size, file_cnt, true);
 		}
 		else {
-			m_Log = spdlog::rotating_logger_mt("m_Rotating", name, memory_size, file_cnt, true);
+			m_log = spdlog::rotating_logger_mt("m_Rotating", name, memory_size, file_cnt, true);
 		}
 
-		m_MinLevel = level;
-		is_Open.store(true);
+		m_minLevel = level;
+		is_open = true;
 	}
 
-	void initDaily(std::string name = "log.txt", Level level = Level::err
-		, int hour = 0, int min = 0, size_t file_cnt = 10)
+	void initDaily(std::string name, Level level, int hour, int min, size_t file_cnt)
 	{
-		if (is_Async.load()) {
-			spdlog::init_thread_pool(m_MaxSize, 1);
-			m_Log = spdlog::daily_logger_mt<spdlog::async_factory>("m_AsyncDaily", name, hour, min, true, file_cnt);
+		if (is_async) {
+			spdlog::init_thread_pool(m_maxSize, 1);
+			m_log = spdlog::daily_logger_mt<spdlog::async_factory>("m_AsyncDaily", name, hour, min, true, file_cnt);
 		}
 		else {
-			m_Log = spdlog::daily_logger_mt("m_Daily", name, hour, min, true, file_cnt);
+			m_log = spdlog::daily_logger_mt("m_Daily", name, hour, min, true, file_cnt);
 		}
 
-		m_MinLevel = level;
-		is_Open.store(true);
+		m_minLevel = level;
+		is_open = true;
 	}
 
 	void initMaxSize(int max_size)
 	{
-		m_MaxSize = max_size;
+		m_maxSize = max_size;
 	}
 
 	void setAsync()
 	{
-		is_Async.store(true);
+		is_async = true;
 	}
 
 	void close()
 	{
-		is_Open.store(false);
+		is_open = false;
 	}
-
-	/*void setFileEvent(FileEven event)
-	{
-		m_Event = event;
-	}*/
 
 	bool write(Level level, const std::string& s)
 	{
-		if (is_Open.load() == false) {
+		if (is_open == false) {
 			return false;
 		}
+
 		_switchWrite(level, s);
 		return true;
 	}
@@ -149,55 +143,60 @@ private:
 
 	Log()
 	{
-		m_MinLevel = Level::debug;
-		is_Open.store(false);
-		is_Async.store(false);
-		m_MaxSize = 8192;
-		m_Log = nullptr;
-	}
+		is_open = false;
+		is_async = std::stoi(ConfigMgr::Inst()["Logger"]["Async"]);
+		m_maxSize = std::stoi(ConfigMgr::Inst()["Logger"]["MaxSize"]);
+		m_minLevel = static_cast<Level>(std::stoi(ConfigMgr::Inst()["Logger"]["Level"]));
 
-	void _switchWrite(Level level, const std::string& str)
-	{
-		assert(m_Log != nullptr);
+		if (!std::stoi(ConfigMgr::Inst()["Logger"]["Open"])) return;
 
-		switch (level) {
-		case spdlog::level::err:
-			m_Log->error(str.c_str());
+		auto type = m_maxSize = std::stoi(ConfigMgr::Inst()["Logger"]["Type"]);
+
+		switch (type)
+		{
+		case 0: {
+			initOut(m_minLevel);
 			break;
-		case spdlog::level::info:
-			m_Log->info(str.c_str());
+		}
+		case 1: {
+			initBasic(ConfigMgr::Inst()["Logger"]["FileName"], m_minLevel);
 			break;
-		case spdlog::level::warn:
-			m_Log->warn(str.c_str());
+		}
+		case 2: {
+			initRotating(
+				ConfigMgr::Inst()["Logger"]["FileName"],
+				m_minLevel,
+				std::stoi(ConfigMgr::Inst()["Logger"]["MemorySize"]),
+				std::stoi(ConfigMgr::Inst()["Logger"]["FileCnt"]));
 			break;
-		case spdlog::level::debug:
-			m_Log->debug(str.c_str());
+		}
+		case 3: {
+			initDaily(
+				ConfigMgr::Inst()["Logger"]["FileName"],
+				m_minLevel,
+				std::stoi(ConfigMgr::Inst()["Logger"]["Hour"]),
+				std::stoi(ConfigMgr::Inst()["Logger"]["Minute"]),
+				std::stoi(ConfigMgr::Inst()["Logger"]["FileCnt"]));
 			break;
-		case spdlog::level::trace:
-			m_Log->trace(str.c_str());
-			break;
-		case spdlog::level::critical:
-			m_Log->critical(str.c_str());
-			break;
+		}
 		default:
-			m_Log->debug(str.c_str());
 			break;
 		}
 	}
 
+	void _switchWrite(Level level, const std::string& str)
+	{
+		assert(m_log != nullptr);
+		m_log->log(level, str);
+	}
+
 private:
 
-    int m_MaxSize;
-
-    Level m_MinLevel;
-
-    //FileEven m_Event;
-
-    std::atomic<bool> is_Open;
-
-    std::atomic<bool> is_Async;
-
-    std::shared_ptr<spdlog::logger> m_Log;
+    int m_maxSize;
+    Level m_minLevel;
+    bool is_open;
+    bool is_async;
+    std::shared_ptr<spdlog::logger> m_log;
 };
 
 

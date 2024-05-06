@@ -1,0 +1,401 @@
+{
+	"BUILD_DIR" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen",
+	"CMAKE_BINARY_DIR" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary",
+	"CMAKE_EXECUTABLE" : "D:/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/CMakeLists.txt",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtFeature.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"D:/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"D:/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Targets.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtFeature.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"D:/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"D:/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"D:/Qt/6.5.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"D:/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/GNUInstallDirs.cmake",
+		"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/resource.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer",
+	"DEP_FILE" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "TinyWidgetLibrary_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/CheckButton.h",
+			"MU",
+			"H7WYFNOPTF/moc_CheckButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/RadioButton.h",
+			"MU",
+			"H7WYFNOPTF/moc_RadioButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/SwitchButton.h",
+			"MU",
+			"H7WYFNOPTF/moc_SwitchButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Buttons/CheckableButton/ToggleButton.h",
+			"MU",
+			"H7WYFNOPTF/moc_ToggleButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Buttons/RectangleButton/StandardButton.h",
+			"MU",
+			"SN3VVVBPNK/moc_StandardButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Button/CheckableButton.h",
+			"MU",
+			"KUZAA6VLYW/moc_CheckableButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Button/RectangleButton.h",
+			"MU",
+			"KUZAA6VLYW/moc_RectangleButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Ripple/Overlay.h",
+			"MU",
+			"2GWO63QEZ6/moc_Overlay.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Ripple/OverlayAbstractButton.h",
+			"MU",
+			"2GWO63QEZ6/moc_OverlayAbstractButton.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Ripple/Ripple.h",
+			"MU",
+			"2GWO63QEZ6/moc_Ripple.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Ripple/RollingRipple.h",
+			"MU",
+			"2GWO63QEZ6/moc_RollingRipple.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Ripple/RoundRipple.h",
+			"MU",
+			"2GWO63QEZ6/moc_RoundRipple.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/SliderWidget/SliderWidget.h",
+			"MU",
+			"FUX2S6CZHH/moc_SliderWidget.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/TextBox/Paint/Paint.h",
+			"MU",
+			"QTVNUVIOQT/moc_Paint.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/TextBox/Paint/PaintSub/RisePaint.h",
+			"MU",
+			"4MOHMCB7XU/moc_RisePaint.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/TextBox/PaintWidget.h",
+			"MU",
+			"NHOKVPB2P5/moc_PaintWidget.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Window/PointFixedWidget.h",
+			"MU",
+			"G6IS2TYQ2L/moc_PointFixedWidget.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Window/RemovableWindow.h",
+			"MU",
+			"G6IS2TYQ2L/moc_RemovableWindow.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Helper/Window/SizeFixedWidget.h",
+			"MU",
+			"G6IS2TYQ2L/moc_SizeFixedWidget.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/PopupBox/FloatWindow.h",
+			"MU",
+			"V5XCJHWG3U/moc_FloatWindow.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/PopupBox/MessageBoxHint.h",
+			"MU",
+			"V5XCJHWG3U/moc_MessageBoxHint.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/PopupBox/SizeFixedDialog.h",
+			"MU",
+			"V5XCJHWG3U/moc_SizeFixedDialog.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/Progress/Slider.h",
+			"MU",
+			"Y5BNMWHZ3G/moc_Slider.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/TextBox/ComboBox.h",
+			"MU",
+			"ZONCSYDHXD/moc_ComboBox.cpp",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget/TextBox/TextBox.h",
+			"MU",
+			"ZONCSYDHXD/moc_TextBox.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/TinyWidgetLibrary_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_STATEMACHINE_LIB",
+		"QT_WIDGETS_LIB",
+		"UNICODE",
+		"WIN32",
+		"WIN64",
+		"_ENABLE_EXTENDED_ALIGNED_STORAGE",
+		"_UNICODE",
+		"_WIN64"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/MyWidget",
+		"D:/Qt/6.5.3/msvc2019_64/include/QtCore",
+		"D:/Qt/6.5.3/msvc2019_64/include",
+		"D:/Qt/6.5.3/msvc2019_64/mkspecs/win32-msvc",
+		"D:/Qt/6.5.3/msvc2019_64/include/QtWidgets",
+		"D:/Qt/6.5.3/msvc2019_64/include/QtGui",
+		"D:/Qt/6.5.3/msvc2019_64/include/QtStateMachine"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/CMakeFiles/TinyWidgetLibrary_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "D:/Qt/6.5.3/msvc2019_64/./bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/Qt/6.5.3/msvc2019_64/./bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 5,
+	"SETTINGS_FILE" : "D:/code/CPP/VS/MusicPlayer/AudioPlayer/out/build/TinyWidgetLibrary/CMakeFiles/TinyWidgetLibrary_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Buttons/CheckableButton/CheckButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Buttons/CheckableButton/RadioButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Buttons/CheckableButton/SwitchButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Buttons/CheckableButton/ToggleButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Buttons/RectangleButton/StandardButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Button/CheckableButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Button/RectangleButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Ripple/Overlay.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Ripple/OverlayAbstractButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Ripple/Ripple.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Ripple/RollingRipple.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Ripple/RoundRipple.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/SliderWidget/SliderWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/TextBox/Paint/Paint.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/TextBox/Paint/PaintSub/RisePaint.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/TextBox/PaintWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Window/PointFixedWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Window/RemovableWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Helper/Window/SizeFixedWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/PopupBox/FloatWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/PopupBox/MessageBoxHint.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/PopupBox/SizeFixedDialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/Progress/Slider.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/TextBox/ComboBox.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/src/TextBox/TextBox.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [ "D:/code/CPP/VS/MusicPlayer/AudioPlayer/TinyWidgetLibrary/ui" ],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

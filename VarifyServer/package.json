@@ -14,5 +14,8 @@
     "ioredis": "^5.3.2",
     "nodemailer": "^6.9.12",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.1.1"
   }
 }
